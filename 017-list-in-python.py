@@ -9,7 +9,6 @@ print(a)
 b = ["Google", "Facebook", "Microsoft", 14, 45]
 print(b)
 
-
 print(b[0].lower())  # Get first element
 print(b[2])  # Get third element
 
@@ -17,17 +16,12 @@ print("Accessing element using negative indexing")
 print(b[-1])  # Get last index
 print(b[-3])  # Get third index from last
 
-
-# Change the item in the list
+# Update the item in the list
 b[1] = "Youtube"
-
-#
-
+print(b)
 
 # Append function use for add item in list at the end
 b.append("Twitter")
-print(b)
-
 
 print(f"Value of b is: {b}")
 
@@ -57,7 +51,7 @@ print(car)
 car.insert(0, "Audi")
 print(car)
 
-# Delete element from list
+# Delete element from list using del keyword
 del car[2]
 print(car)
 
@@ -71,7 +65,7 @@ p = car.pop(1)
 print(f"Second deleted element: {p}")
 print(car)
 
-# Remove element by name
+# Remove element by item name
 car.remove('KIA')
 print(car)
 
@@ -95,3 +89,56 @@ print(fruit)
 
 # Count list element
 print(len(fruit))
+
+# Working with list
+fruits = ["apple", "banana", "cake", "orange", "pine apple", "strawberry"]
+# Get first 2 element or item
+print(fruits[0:2])
+
+# Get first 2 element or item
+print(fruits[:2])
+
+# Get item from index 2 to end
+print(fruits[2:])
+
+# Get item from start to end with 1 skip
+print(fruits[::2])
+
+# Get last one item
+print(fruits[-1:])
+
+# Sort all item in decending order
+print(fruits[::-1])
+
+# Loop on list
+for x in fruits:
+    print(x)
+# Count list items
+print(len(fruits))
+# Check item already exist
+print("banana" in fruits)
+
+# Update an item
+
+fruits[0] = "pinapple"
+
+for x in fruits:
+    print(x)
+
+# Empty List
+fruits.clear()
+
+# Find Index
+fruits.index("apple")
+
+# Count specific item
+fruits.count("banana")  # count the qty
+
+# Copy a list
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friend_foods = my_foods[:]
+# friend_foods = my_foods
+print("My favorite foods are:")
+print(my_foods)
+print("\nMy friend's favorite foods are:")
+print(friend_foods)

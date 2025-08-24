@@ -20,3 +20,18 @@ else:
 # loop on string value
 for x in 'banana':
     print(x)
+
+# Reverse the loop
+for x in reversed(range(1, 11)):
+    print(x)
+
+# Create a list using list function
+numbers = list(range(1, 6))
+print(numbers)
+
+# Square number of iterate number and submit it in empty list
+squares = []
+for value in range(1, 11):
+    square = value ** 2
+    squares.append(square)
+print(squares)

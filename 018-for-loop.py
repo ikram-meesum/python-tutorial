@@ -35,3 +35,20 @@ for value in range(1, 11):
     square = value ** 2
     squares.append(square)
 print(squares)
+
+
+# Get the sum of loop
+theSum = 0
+for count in range(5):
+    theSum += count
+
+print(theSum)
+
+
+# Reverse loop
+for count in range(10, 0, -1):
+    print(count, end=" ")
+
+# increment in loop value
+for count in range(5):
+    print(count + 1, end=" ")

@@ -1,5 +1,6 @@
 # Empty list
 a = []
+print(len(a))
 
 # list with int values
 a = [1, 2, 3]
@@ -137,8 +138,25 @@ fruits.count("banana")  # count the qty
 # Copy a list
 my_foods = ['pizza', 'falafel', 'carrot cake']
 friend_foods = my_foods[:]
+
 # friend_foods = my_foods
 print("My favorite foods are:")
 print(my_foods)
 print("\nMy friend's favorite foods are:")
 print(friend_foods)
+
+
+# Concatenate 2 list
+lstA = [1, 3, 5, 7, 9]
+lstB = [2, 4, 6, 8, 10]
+
+lstC = lstA + lstB
+print(lstC)
+
+
+# Remove range items
+
+grocery = ['kecthup', 'atta', 'rice', 'sugar', 'milk',
+           'shanmasala', 'oil', 'mirchen', 'namak', 'ghee']
+
+del grocery[2:5]

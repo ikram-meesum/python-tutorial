@@ -18,19 +18,19 @@ Line 1
 # Add Sub Multiply and Division
 print(4 + 5)
 
-# Error
+# Error type casting
 print(4 - "3")
 
-# Error
+# Error type casting
 print(4 + "3")
 
 print("4" + 3)
-# Error
+# Error type casting
 
-# Error
+# Error type casting
 print(4 + "3" + 2)
 
-# Error
+# Error type casting
 print(2 + 4 + "3")
 
 
@@ -39,11 +39,20 @@ print("*" * 10)
 
 # ==================== ESCAPE SEQUENCE ==================
 
-# for new line
+# for new line use \n
 print("This is new line \nescape sequence")
 
+# double inverted commas
 print("This is \"double quotation\" mark")
+
+# single inverted commas
 print("This is \'single quotation\' mark")
+
+# for tab use \t
 print("This is \t tab sequence")
-print(r"c:\python\practice")
+
+# for create a path
 print("c:\\python\\practice")
+
+# but you can use r start of path for single black slash
+print(r"c:\python\practice")

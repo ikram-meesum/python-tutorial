@@ -32,3 +32,19 @@ class Student:
 
 std = Student()
 std.start_learning()
+
+# Get all class attributes only using __dict__
+
+
+class Employee:
+    def __init__(self, name, empAge, empSalary):
+        self.empName = name
+        self.age = empAge
+        self.salary = empSalary
+
+    def test2():
+        print('test method')
+
+
+emp = Employee('Mohammad Ali', 45, 125000)
+print(emp.__dict__)

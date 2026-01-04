@@ -8,6 +8,9 @@
 
 
 class Dog():
+
+    foot = 4
+
     # constructor
     def __init__(self):
         print(self)
@@ -16,6 +19,13 @@ class Dog():
 
 dog1 = Dog()
 print(dog1)
+
+# Class variable and attribute can be access with class name or with out
+# instence or object
+print(Dog.foot)
+
+# Class variable can be access with object as well.
+print(dog1.foot)
 
 
 # 02 Example of constructor
@@ -42,9 +52,17 @@ class Employee:
         self.age = empAge
         self.salary = empSalary
 
-    def test2():
+    def test2(self):
         print('test method')
+
+    def showInfo(self):
+        print(f"My name is {self.empName} and I am {self.age} years old.")
 
 
 emp = Employee('Mohammad Ali', 45, 125000)
+
+print(emp.test2())
+print(emp.showInfo())
+
+# Print data into dictionery
 print(emp.__dict__)

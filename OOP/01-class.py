@@ -23,15 +23,15 @@
 # Polymorphism
 
 # 01. Simple class example
-class Emloyee:
-    # These all are called class attributes like name email salary depart
+class Employee:
+    # These all are called class attributes or properties like name email salary depart
     name = "Mohammad Ikram Khan"
     depart = "IT"
     email = 'abc@gmail.com'
     salary = 90000
 
 
-emp = Emloyee()  # here emp is an object
+emp = Employee()  # here emp is an object
 print(emp.name, emp.depart, emp.salary)
 
 # Add new attributes as age
@@ -42,11 +42,17 @@ print(emp.name, emp.age, emp.depart, emp.salary)
 emp.name = "Meesum Ali"
 print(emp.name, emp.age, emp.depart, emp.salary)
 
+# Second object
+emp2 = Employee()
+emp2.name = "Kamran Ali"
+emp2.depart = "Networking"
+emp2.email = "kamran@gmail.com"
+emp2.salary = 72000
+
+
 # =========== SELF PARAMETER ============
 
 # 02 Example
-
-
 class Car:
     def start_engine(self):
         print("Engine started")

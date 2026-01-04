@@ -40,7 +40,8 @@ print(b)
 b *= a  # Equal to b = a * a
 print(b)
 
-# Other example
+# Example 02
+
 friends = 5
 friends = friends + 1
 friends += 1
@@ -48,11 +49,11 @@ friends = friends ** 2
 remainder = friends % 3
 print(remainder)
 
-# Other example
+# Example 03
 print("." * 10 + "Python")
 
 
-# Other Example
+# Example 04
 num = 10
 
 num += 5  # Equivalent to num = num + 5
@@ -74,7 +75,7 @@ print(a and b)  # Both value or condition should be true then answer will be tru
 print(a or b)  # Any one value or condition should be true then answer will be true
 print(not a)  # Opposit value or condition like true to false or false to true
 
-# Other example
+# Example 05
 
 p = True
 q = False
@@ -83,7 +84,8 @@ print(f"AND: {p and q}")  # Output: AND: False
 print(f"OR: {p or q}")   # Output: OR: True
 print(f"NOT: {not p}")   # Output: NOT: False
 
-# Second example
+# Example 06
+
 x = 5
 y = 10
 
@@ -102,7 +104,7 @@ print(f"not (x > 10): {not (x > 10)}")
 # In operator
 print('s' in 'ikram')
 
-# Example 02
+# Example 07
 
 character = input("Enter a character? ")
 vowels = 'aeiou'
@@ -111,7 +113,7 @@ if character in vowels:
 else:
     print('consonant')
 
-# Example 03
+# Example 08
 
 my_list = [1, 2, 3, 4, 5]
 print(f"Is 3 in list?: {3 in my_list}")      # Output: Is 3 in list?: True
@@ -128,7 +130,7 @@ c = a
 print(a is not b)
 print(a is c)
 
-# Othe example
+# Example 09
 
 list1 = [1, 2, 3]
 list2 = [1, 2, 3]
@@ -158,7 +160,8 @@ print(f"a is {a} and b is {b}")
 min = a if a < b else b
 print(f"{min} is min value.")
 
-# Second Example
+# Example 10
+
 num = 8
 print('Yes') if num > 10 else print('No')
 
